@@ -20,6 +20,7 @@
     "statusBar.foreground": "#FFFFFF",
     "tab.activeBackground": "#272e40",
     "tab.inactiveBackground": "#191a20",
+    "tab.border": "#5d6068",
     "tab.activeBorder": "#a54e02",
     "titleBar.border": "#34373f",
     "tab.activeForeground": "#FFFFFF",
@@ -29,7 +30,20 @@
     "editor.lineHighlightBackground": "#1E1E1E",
     "editorCursor.foreground": "#AEAFAD",
     "terminal.background": "#1b202b",
-    "terminal.foreground": "#E0E0E0"
+    "terminal.foreground": "#E0E0E0",
+    "button.background": "#FFC000",
+    "button.foreground": "#020202",
+    "button.hoverBackground": "#DBA500",
+    "settings.modifiedItemIndicator": "#FFC000",
+    "settings.headerForeground": "#020202",
+    "extensionButton.prominentBackground": "#a54e02",
+    "extensionButton.prominentForeground": "#020202",
+    "extensionButton.prominentHoverBackground": "#c35e02",
+    "quickInput.background": "#1b202b",
+    "quickInput.foreground": "#E0E0E0",
+    "editorSuggestWidget.background": "#27292d",
+    "editorSuggestWidget.border": "#4e525c",
+    "editorSuggestWidget.foreground": "#E0E0E0"
   },
   "tokenColors": [
     {
@@ -57,7 +71,7 @@
       "name": "Keyword",
       "scope": ["keyword"],
       "settings": {
-        "foreground": "#ff8c21",
+        "foreground": "#FFC000",
         "fontStyle": "italic"
       }
     },
@@ -105,7 +119,7 @@
       "name": "Tag",
       "scope": ["entity.name.tag"],
       "settings": {
-        "foreground": "#ff8c21"
+        "foreground": "#FFC000"
       }
     },
     {
@@ -176,7 +190,7 @@
       "name": "CSS Keywords",
       "scope": ["support.constant.property-value.css"],
       "settings": {
-        "foreground": "#ff8c21",
+        "foreground": "#FFC000",
         "fontStyle": "italic"
       }
     },
@@ -206,7 +220,7 @@
       "name": "TypeScript Modifier",
       "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
       "settings": {
-        "foreground": "#ff8c21",
+        "foreground": "#FFC000",
         "fontStyle": "italic"
       }
     },
@@ -221,7 +235,7 @@
       "name": "Markdown Heading",
       "scope": ["markup.heading"],
       "settings": {
-        "foreground": "#ff8c21",
+        "foreground": "#FFC000",
         "fontStyle": "bold"
       }
     },
@@ -260,7 +274,7 @@
       "name": "Markdown List Marker",
       "scope": ["punctuation.definition.list.markdown"],
       "settings": {
-        "foreground": "#ff8c21",
+        "foreground": "#FFC000",
         "fontStyle": "bold"
       }
     }
