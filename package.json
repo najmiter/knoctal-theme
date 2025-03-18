@@ -1,0 +1,37 @@
+{
+  "name": "knoctal-theme",
+  "displayName": "Knoctal Theme",
+  "description": "A dark theme for VS Code",
+  "version": "0.0.1",
+  "publisher": "najmiter",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "icon": "images/icon.png",
+  "pricing": "Free",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Knoctal Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/knoctal-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.126",
+    "@types/vscode": "^1.98.0",
+    "typescript": "^4.9.5",
+    "vsce": "^2.15.0"
+  }
+}
