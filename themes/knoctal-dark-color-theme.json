@@ -37,7 +37,7 @@
     "settings.modifiedItemIndicator": "#FFC000",
     "settings.headerForeground": "#c7c7c7",
     "extensionButton.prominentBackground": "#a54e02",
-    "extensionButton.prominentForeground": "#d3d3d3",
+    "extensionButton.prominentForeground": "#202020",
     "extensionButton.prominentHoverBackground": "#c35e02",
     "quickInput.background": "#1b202b",
     "quickInput.foreground": "#E0E0E0",

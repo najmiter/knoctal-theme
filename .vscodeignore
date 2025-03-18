@@ -8,5 +8,4 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
-images/ss/css.png
-images/ss/html.png
+images/ss/**/*
