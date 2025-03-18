@@ -29,23 +29,43 @@
     "tab.inactiveForeground": "#AAAAAA",
     "editorGroupHeader.tabsBackground": "#131313",
     "editor.selectionBackground": "#343440",
-    "editor.lineHighlightBackground": "#1E1E1E",
+    "editor.lineHighlightBackground": "#2c2c2cba",
     "editorCursor.foreground": "#AEAFAD",
-    "terminal.background": "#1b202b",
-    "terminal.foreground": "#E0E0E0",
     "button.background": "#FFC000",
     "button.foreground": "#020202",
     "button.hoverBackground": "#DBA500",
     "settings.modifiedItemIndicator": "#FFC000",
-    "settings.headerForeground": "#020202",
+    "settings.headerForeground": "#c7c7c7",
     "extensionButton.prominentBackground": "#a54e02",
-    "extensionButton.prominentForeground": "#020202",
+    "extensionButton.prominentForeground": "#d3d3d3",
     "extensionButton.prominentHoverBackground": "#c35e02",
     "quickInput.background": "#1b202b",
     "quickInput.foreground": "#E0E0E0",
     "editorSuggestWidget.background": "#27292d",
     "editorSuggestWidget.border": "#4e525c",
-    "editorSuggestWidget.foreground": "#E0E0E0"
+    "editorSuggestWidget.foreground": "#E0E0E0",
+    "terminal.background": "#1b202b",
+    "terminal.foreground": "#b2b4cb",
+    "terminal.ansiBlack": "#282c34",
+    "terminal.ansiRed": "#d9858c",
+    "terminal.ansiGreen": "#98c379",
+    "terminal.ansiYellow": "#e5c07b",
+    "terminal.ansiBlue": "#61afef",
+    "terminal.ansiMagenta": "#c678dd",
+    "terminal.ansiCyan": "#56b6c2",
+    "terminal.ansiWhite": "#abb2bf",
+    "terminal.ansiBrightBlack": "#5c6370",
+    "terminal.ansiBrightBlue": "#61afef",
+    "terminal.ansiBrightCyan": "#a54e02",
+    "terminal.ansiBrightGreen": "#98c379",
+    "terminal.ansiBrightMagenta": "#c678dd",
+    "terminal.ansiBrightRed": "#d9858c",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#e5c07b",
+    "terminal.selectionBackground": "#3e4451",
+    "list.activeSelectionBackground": "#3e4451",
+    "editorLineNumber.activeForeground": "#a2abbc",
+    "editorLineNumber.foreground": "#4e525c"
   },
   "tokenColors": [
     {
@@ -72,6 +92,14 @@
     {
       "name": "Keyword",
       "scope": ["keyword"],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Async Keyword",
+      "scope": ["storage.modifier.async"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
