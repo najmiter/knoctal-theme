@@ -65,7 +65,11 @@
     "terminal.selectionBackground": "#3e4451",
     "list.activeSelectionBackground": "#3e4451",
     "editorLineNumber.activeForeground": "#a2abbc",
-    "editorLineNumber.foreground": "#4e525c"
+    "editorLineNumber.foreground": "#4e525c",
+    "welcomePage.background": "#20242c",
+    "welcomePage.progress.background": "#FFC000",
+    "welcomePage.progress.foreground": "#1f2024",
+    "textLink.foreground": "#FFC000"
   },
   "tokenColors": [
     {
@@ -307,6 +311,35 @@
         "foreground": "#FFC000",
         "fontStyle": "bold"
       }
+    },
+    // assembly
+    {
+      "scope": "keyword.instruction.assembly",
+      "settings": { "foreground": "#ffcc00" }
+    },
+    {
+      "scope": "comment.line.assembly",
+      "settings": { "foreground": "#6A9955" }
+    },
+    {
+      "scope": "string.assembly",
+      "settings": { "foreground": "#ce9178" }
+    },
+    {
+      "scope": "constant.numeric.assembly",
+      "settings": { "foreground": "#b5cea8" }
+    },
+    {
+      "scope": "variable.register.assembly",
+      "settings": { "foreground": "#9cdcfe" }
+    },
+    {
+      "scope": "storage.type.directive.assembly",
+      "settings": { "foreground": "#ec647d", "fontStyle": "italic" }
+    },
+    {
+      "scope": "entity.name.function.label.assembly",
+      "settings": { "foreground": "#a494ea" }
     }
   ]
 }

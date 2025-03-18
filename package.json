@@ -2,12 +2,11 @@
   "name": "knoctal-theme",
   "displayName": "Knoctal Theme",
   "description": "Knoctal dark theme for VS Code",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "najmiter",
   "engines": {
     "vscode": "^1.60.0"
   },
-  "main": "./out/extension.js",
   "icon": "images/icon.png",
   "pricing": "Free",
   "categories": [
@@ -24,8 +23,36 @@
         "uiTheme": "vs-dark",
         "path": "./themes/knoctal-dark-color-theme.json"
       }
+    ],
+    "languages": [
+      {
+        "id": "assembly",
+        "aliases": [
+          "Assembly",
+          "assembly"
+        ],
+        "extensions": [
+          ".asm",
+          ".s"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "assembly",
+        "scopeName": "source.assembly",
+        "path": "./syntaxes/assembly.tmLanguage.json"
+      }
     ]
   },
+  "keywords": [
+    "theme",
+    "dark",
+    "knoctal",
+    "assembly theme",
+    "assembly syntax"
+  ],
+  "license": "CC BY-ND 4.0",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
