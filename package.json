@@ -12,6 +12,10 @@
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/najmiter/knoctal-theme.git"
+  },
   "contributes": {
     "themes": [
       {

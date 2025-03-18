@@ -4,6 +4,10 @@ A dark theme for Visual Studio Code that's easy on the eyes.
 
 ## Screenshots
 
+![JavaScript Syntax Highlighting](/images/ss/javascript.png)
+![HTML Syntax Highlighting](/images/ss/html.png)
+![CSS Syntax Highlighting](/images/ss/css.png)
+
 ## Installation
 
 1. Open **Extensions** sidebar panel in VS Code. `View → Extensions`

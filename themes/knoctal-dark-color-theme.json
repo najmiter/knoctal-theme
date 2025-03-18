@@ -2,7 +2,7 @@
   "name": "Knoctal Dark",
   "type": "dark",
   "colors": {
-    "editor.background": "#181a1f",
+    "editor.background": "#1f2024",
     "editor.foreground": "#E0E0E0",
     "activityBar.background": "#1c1d22",
     "activityBar.border": "#34373f",
@@ -18,7 +18,7 @@
     "titleBar.activeForeground": "#FFFFFF",
     "statusBar.background": "#0A0A0A",
     "statusBar.foreground": "#FFFFFF",
-    "tab.activeBackground": "#2a2a2b",
+    "tab.activeBackground": "#272e40",
     "tab.inactiveBackground": "#191a20",
     "tab.activeBorder": "#a54e02",
     "titleBar.border": "#34373f",
@@ -186,6 +186,82 @@
       "settings": {
         "foreground": "#83b5ff",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "C++ Type Names in Declarations",
+      "scope": [
+        "storage.type.built-in.cpp",
+        "entity.name.type.cpp",
+        "support.type.cpp",
+        "variable.other.cpp",
+        "storage.type.user-defined.cpp"
+      ],
+      "settings": {
+        "foreground": "#83b5ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "TypeScript Modifier",
+      "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
+      "settings": {
+        "foreground": "#ff8c21",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "JSON Key",
+      "scope": ["support.type.property-name.json"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "Markdown Heading",
+      "scope": ["markup.heading"],
+      "settings": {
+        "foreground": "#ff8c21",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Italic",
+      "scope": ["markup.italic"],
+      "settings": {
+        "foreground": "#d78787",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": ["markup.bold"],
+      "settings": {
+        "foreground": "#d78787",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Code",
+      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "Markdown Link",
+      "scope": ["markup.underline.link"],
+      "settings": {
+        "foreground": "#83b5ff",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown List Marker",
+      "scope": ["punctuation.definition.list.markdown"],
+      "settings": {
+        "foreground": "#ff8c21",
+        "fontStyle": "bold"
       }
     }
   ]
