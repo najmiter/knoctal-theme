@@ -1,6 +1,9 @@
 # Knoctal Theme for VS Code
 
-A dark theme for Visual Studio Code that's easy on the eyes. Supports assembly code as well (`.asm`, `.s` file extensions).
+A dark theme for Visual Studio Code that's easy on the eyes.
+
+> [!NOTE]
+> Supports assembly code as well (`.asm`, `.s` file extensions).
 
 ## Screenshots
 
