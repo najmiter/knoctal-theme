@@ -16,6 +16,7 @@ A dark theme for Visual Studio Code that's easy on the eyes.
 - Rust
 - Zig
 - PHP
+- Markdown
 
 > [!NOTE]
 > The languages mentioned above are tested. It'll work with others (not mentioned here as well), but some parts may not highlight properly as expected.
