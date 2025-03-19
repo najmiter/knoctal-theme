@@ -2,8 +2,23 @@
 
 A dark theme for Visual Studio Code that's easy on the eyes.
 
+## Supported Languages
+
+- Assembly
+- C/C++
+- TypeScript (ts, tsx)
+- JavaScript (js, jsx)
+- HTML
+- CSS
+- C#
+- Java
+- Python
+- Rust
+- Zig
+- PHP
+
 > [!NOTE]
-> Supports assembly code as well (`.asm`, `.s` file extensions).
+> The languages mentioned above are tested. It'll work with others (not mentioned here as well), but some parts may not highlight properly as expected.
 
 ## Screenshots
 
@@ -12,20 +27,6 @@ A dark theme for Visual Studio Code that's easy on the eyes.
 ![HTML Syntax Highlighting](/images/ss/html.png)
 
 ![CSS Syntax Highlighting](/images/ss/css.png)
-
-## Installation
-
-1. Open **Extensions** sidebar panel in VS Code. `View → Extensions`
-2. Search for `Knoctal Theme`
-3. Click **Install** to install it
-4. Click **Reload** to reload the editor
-5. Code > Preferences > Color Theme > **Knoctal Dark**
-
-## Features
-
-- Sleek dark color scheme optimized for long coding sessions
-- Carefully selected syntax highlighting colors for improved readability
-- Consistent UI elements with minimal distractions
 
 ## Feedback
 

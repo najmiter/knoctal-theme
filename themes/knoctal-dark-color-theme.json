@@ -72,6 +72,7 @@
     "textLink.foreground": "#FFC000"
   },
   "tokenColors": [
+    // common
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -206,6 +207,7 @@
         "foreground": "#c5cfe6"
       }
     },
+    // css
     {
       "name": "CSS Property",
       "scope": ["support.type.property-name.css"],
@@ -228,14 +230,7 @@
         "fontStyle": "italic"
       }
     },
-    {
-      "name": "Primitive Type",
-      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
-      "settings": {
-        "foreground": "#83b5ff",
-        "fontStyle": "italic"
-      }
-    },
+    // cpp
     {
       "name": "C++ Type Names in Declarations",
       "scope": [
@@ -250,6 +245,15 @@
         "fontStyle": "bold"
       }
     },
+    // typescript
+    {
+      "name": "Primitive Type",
+      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
+      "settings": {
+        "foreground": "#83b5ff",
+        "fontStyle": "italic"
+      }
+    },
     {
       "name": "TypeScript Modifier",
       "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
@@ -258,6 +262,7 @@
         "fontStyle": "italic"
       }
     },
+    // json
     {
       "name": "JSON Key",
       "scope": ["support.type.property-name.json"],
@@ -340,6 +345,407 @@
     {
       "scope": "entity.name.function.label.assembly",
       "settings": { "foreground": "#a494ea" }
+    },
+    // Java-specific syntax highlighting
+    {
+      "name": "Java Keywords",
+      "scope": [
+        "keyword.control.java",
+        "storage.modifier.java",
+        "storage.type.java"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Java Classes",
+      "scope": [
+        "entity.name.type.class.java",
+        "entity.other.inherited-class.java"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "Java Methods",
+      "scope": [
+        "entity.name.function.java",
+        "entity.name.function.method.java"
+      ],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "Java Annotations",
+      "scope": ["storage.type.annotation.java"],
+      "settings": {
+        "foreground": "#FFC000",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Java Variables",
+      "scope": ["variable.other.definition.java"],
+      "settings": {
+        "foreground": "#ffb383"
+      }
+    },
+    {
+      "name": "Java Constants",
+      "scope": ["variable.other.constant.java"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "Java Imports",
+      "scope": [
+        "storage.modifier.import.java",
+        "storage.modifier.package.java"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    // C# specific syntax highlighting
+    {
+      "name": "C# Keywords and Modifiers",
+      "scope": [
+        "keyword.control.cs",
+        "storage.modifier.cs",
+        "keyword.other.namespace.cs",
+        "storage.type.cs"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "C# Access Modifiers",
+      "scope": [
+        "storage.modifier.access.control.public.cs",
+        "storage.modifier.access.control.private.cs",
+        "storage.modifier.access.control.protected.cs",
+        "storage.modifier.access.control.internal.cs",
+        "storage.modifier.static.cs",
+        "storage.modifier.private.cs",
+        "storage.modifier.public.cs",
+        "storage.modifier.protected.cs",
+        "storage.modifier.internal.cs",
+        "storage.modifier.async.cs",
+        "storage.modifier.readonly.cs",
+        "storage.modifier.const.cs",
+        "storage.modifier.cs"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "C# Classes and Types",
+      "scope": [
+        "entity.name.type.class.cs",
+        "entity.name.type.struct.cs",
+        "entity.name.type.interface.cs",
+        "entity.other.inherited-class.cs"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "C# Namespaces",
+      "scope": ["entity.name.type.namespace.cs"],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "C# Preprocessor",
+      "scope": ["meta.preprocessor.cs", "keyword.preprocessor.cs"],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    // Rust specific syntax highlighting
+    {
+      "name": "Rust Keywords",
+      "scope": [
+        "keyword.control.rust",
+        "keyword.operator.rust",
+        "storage.type.rust",
+        "storage.modifier.rust"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Rust Types",
+      "scope": [
+        "entity.name.type.rust",
+        "storage.type.core.rust",
+        "storage.class.std.rust"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "Rust Functions",
+      "scope": ["entity.name.function.rust", "support.function.rust"],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "Rust Macros",
+      "scope": ["support.macro.rust", "entity.name.function.macro.rust"],
+      "settings": {
+        "foreground": "#FFC000"
+      }
+    },
+    {
+      "name": "Rust Attributes",
+      "scope": ["meta.attribute.rust"],
+      "settings": {
+        "foreground": "#a4c1ff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Rust Lifetimes",
+      "scope": ["storage.modifier.lifetime.rust"],
+      "settings": {
+        "foreground": "#ef5f72",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Rust Constants and Statics",
+      "scope": ["support.constant.core.rust", "variable.other.constant.rust"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+
+    // Zig specific syntax highlighting
+    {
+      "name": "Zig Keywords",
+      "scope": [
+        "keyword.control.zig",
+        "keyword.operator.zig",
+        "storage.type.zig",
+        "storage.modifier.zig"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Zig Types",
+      "scope": ["entity.name.type.zig", "storage.type.zig"],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "Zig Functions",
+      "scope": ["entity.name.function.zig"],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "Zig Builtins",
+      "scope": ["support.function.builtin.zig"],
+      "settings": {
+        "foreground": "#FFC000"
+      }
+    },
+    {
+      "name": "Zig Variables",
+      "scope": ["variable.other.zig"],
+      "settings": {
+        "foreground": "#ffb383"
+      }
+    },
+    {
+      "name": "Zig Constants",
+      "scope": ["variable.other.constant.zig"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+
+    // PHP specific syntax highlighting
+    {
+      "name": "PHP Tags",
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php"
+      ],
+      "settings": {
+        "foreground": "#ef5f72"
+      }
+    },
+    {
+      "name": "PHP Keywords",
+      "scope": [
+        "keyword.control.php",
+        "keyword.other.php",
+        "storage.type.php",
+        "storage.modifier.php",
+        "keyword.other.namespace.php",
+        "keyword.other.use.php",
+        "keyword.other.function.use.php",
+        "keyword.other.class.php",
+        "keyword.other.interface.php",
+        "keyword.other.trait.php",
+        "keyword.control.import.include.php",
+        "keyword.operator.logical.php"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+
+    {
+      "name": "PHP Function and Method Definitions",
+      "scope": ["entity.name.function.php", "support.function.php"],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "PHP Classes, Interfaces, and Traits",
+      "scope": [
+        "entity.name.type.class.php",
+        "entity.name.type.interface.php",
+        "entity.name.type.trait.php",
+        "support.class.php"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "PHP Namespaces",
+      "scope": [
+        "support.other.namespace.php",
+        "entity.name.type.namespace.php"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "PHP Object Properties",
+      "scope": ["variable.other.property.php"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "PHP Magic Constants and Methods",
+      "scope": ["constant.language.php", "support.function.magic.php"],
+      "settings": {
+        "foreground": "#FFC000",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "PHP DocBlock",
+      "scope": ["keyword.other.phpdoc.php", "comment.block.documentation.php"],
+      "settings": {
+        "foreground": "#6f7176",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "PHP Attributes",
+      "scope": ["meta.attribute.php", "support.attribute.php"],
+      "settings": {
+        "foreground": "#FFC000",
+        "fontStyle": "italic"
+      }
+    },
+
+    // HTML in PHP
+    {
+      "name": "HTML Tags in PHP",
+      "scope": [
+        "entity.name.tag.html.php",
+        "entity.name.tag.inline.php",
+        "entity.name.tag.block.php",
+        "punctuation.definition.tag.begin.html.php",
+        "punctuation.definition.tag.end.html.php",
+        "entity.name.tag.structure.any.html.php"
+      ],
+      "settings": {
+        "foreground": "#FFC000"
+      }
+    },
+    {
+      "name": "HTML Attributes in PHP",
+      "scope": [
+        "entity.other.attribute-name.html.php",
+        "entity.other.attribute-name.id.html.php",
+        "entity.other.attribute-name.class.html.php"
+      ],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "HTML Variables in PHP",
+      "scope": ["variable.other.php"],
+      "settings": {
+        "foreground": "#ffb383"
+      }
+    },
+    {
+      "name": "HTML String in PHP",
+      "scope": [
+        "string.quoted.double.html.php",
+        "string.quoted.single.html.php"
+      ],
+      "settings": {
+        "foreground": "#d78787"
+      }
+    },
+    {
+      "name": "Doctype in PHP",
+      "scope": [
+        "meta.tag.metadata.doctype.html.php",
+        "entity.name.tag.doctype.html.php"
+      ],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "PHP Variables Inside HTML",
+      "scope": [
+        "variable.other.php.embedded",
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php"
+      ],
+      "settings": {
+        "foreground": "#ffb383"
+      }
     }
   ]
 }
