@@ -2,7 +2,7 @@
   "name": "knoctal-theme",
   "displayName": "Knoctal Theme",
   "description": "Knoctal dark theme for VS Code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "najmiter",
   "engines": {
     "vscode": "^1.60.0"

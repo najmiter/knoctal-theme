@@ -249,7 +249,20 @@
     // typescript
     {
       "name": "Primitive Type",
-      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
+      "scope": [
+        "support.type.primitive.ts",
+        "support.type.primitive.tsx",
+        "entity.name.type.primitive.ts",
+        "entity.name.type.primitive.tsx",
+        "variable.other.readwrite.ts.null",
+        "variable.other.readwrite.tsx.null",
+        "variable.other.readwrite.ts.undefined",
+        "variable.other.readwrite.tsx.undefined",
+        "support.type.builtin.ts",
+        "support.type.builtin.tsx",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.expression.typeof.tsx"
+      ],
       "settings": {
         "foreground": "#83b5ff",
         "fontStyle": "italic"
