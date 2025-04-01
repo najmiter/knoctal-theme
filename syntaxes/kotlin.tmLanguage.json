@@ -2,7 +2,7 @@
   "scopeName": "source.kotlin",
   "patterns": [
     {
-      "match": "\\b(val|var|fun|class|interface|object|data|enum|sealed|companion|annotation|override|abstract|final|open|lateinit|by|is|as|in|out|where|get|set|constructor|init|import|package|throw|return|internal|private|protected|public|inline|noinline|crossinline|reified|suspend|tailrec|operator|infix|typealias|this|super|break|continue|when|if|else|while|for|do|try|catch|finally|typeof)\\b",
+      "match": "\\b(val|var|const|fun|class|interface|object|data|enum|sealed|companion|annotation|override|abstract|final|open|lateinit|by|is|as|in|out|where|get|set|constructor|init|import|package|throw|return|internal|private|protected|public|inline|noinline|crossinline|reified|suspend|tailrec|operator|infix|typealias|this|super|break|continue|when|if|else|while|for|do|try|catch|finally|typeof)\\b",
       "name": "keyword.control.kotlin"
     },
     {
@@ -73,30 +73,116 @@
       "name": "constant.numeric.kotlin"
     },
     {
-      "match": "\\b(fun)\\s+(<[^>]*>)?\\s*([A-Za-z][A-Za-z0-9_]*)\\s*\\(",
+      "name": "Function Declarations",
+      "match": "\\b(fun)\\s+(?:<[^>]*>)?\\s*(?:([A-Za-z][A-Za-z0-9_]*(?:\\.[A-Za-z][A-Za-z0-9_]*)*)\\s*\\.\\s*)?([A-Za-z][A-Za-z0-9_]*)\\s*(?:\\([^)]*\\))?",
       "captures": {
-        "1": {
-          "name": "keyword.control.kotlin"
-        },
-        "3": {
-          "name": "entity.name.function.kotlin"
-        }
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "entity.name.type.class.kotlin" },
+        "3": { "name": "entity.name.function.kotlin" }
       }
     },
     {
-      "match": "\\b(class|interface|object|enum|data class)\\s+([A-Za-z][A-Za-z0-9_]*)\\b",
+      "name": "Function Declarations with Modifiers",
+      "match": "(?:\\b(?:private|protected|public|internal|override|abstract|final|open|suspend|tailrec|inline|infix|operator)\\s+)*\\b(fun)\\s+(?:<[^>]*>)?\\s*(?:([A-Za-z][A-Za-z0-9_]*(?:\\.[A-Za-z][A-Za-z0-9_]*)*)\\s*\\.\\s*)?([A-Za-z][A-Za-z0-9_]*)\\s*(?:\\([^)]*\\))?",
       "captures": {
-        "1": {
-          "name": "keyword.control.kotlin"
-        },
-        "2": {
-          "name": "entity.name.type.class.kotlin"
-        }
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "entity.name.type.class.kotlin" },
+        "3": { "name": "entity.name.function.kotlin" }
       }
     },
     {
+      "name": "Function Declaration Inside Class",
+      "begin": "\\b(fun)\\s+(?:<[^>]*>)?\\s*([A-Za-z][A-Za-z0-9_]*)\\s*\\(",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "entity.name.function.kotlin" }
+      },
+      "end": "\\)",
+      "patterns": [{ "include": "$self" }]
+    },
+    {
+      "name": "Lambda Expressions",
+      "match": "\\b([A-Za-z][A-Za-z0-9_]*)\\s*(?=->)",
+      "captures": {
+        "1": { "name": "variable.parameter.kotlin" }
+      }
+    },
+    {
+      "name": "Class, Interface, Object Declarations",
+      "match": "\\b(class|interface|object|enum class|data class|sealed class)\\s+([A-Za-z][A-Za-z0-9_]*)(?:<[^>]*>)?\\b",
+      "captures": {
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "entity.name.type.class.kotlin" }
+      }
+    },
+    {
+      "name": "Property Declarations",
+      "match": "\\b(val|var)\\s+(?:(private|protected|public|internal|override)\\s+)*([A-Za-z][A-Za-z0-9_]*)\\b",
+      "captures": {
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "storage.modifier.kotlin" },
+        "3": { "name": "variable.other.kotlin" }
+      }
+    },
+    {
+      "name": "Enum Values",
+      "match": "^\\s*([A-Z][A-Z0-9_]*)(?:\\s*\\(.*\\))?\\s*(?:,|$|;)",
+      "captures": {
+        "1": { "name": "constant.language.kotlin" }
+      }
+    },
+    {
+      "name": "Companion Objects",
+      "match": "\\b(companion)\\s+(object)\\b",
+      "captures": {
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "keyword.control.kotlin" }
+      }
+    },
+    {
+      "name": "Generic Type Parameters",
+      "match": "<([A-Za-z][A-Za-z0-9_]*(?:\\s*,\\s*[A-Za-z][A-Za-z0-9_]*)*)>",
+      "captures": {
+        "1": { "name": "entity.name.type.parameter.kotlin" }
+      }
+    },
+    {
+      "name": "Named Function Parameters",
+      "match": "\\b([A-Za-z][A-Za-z0-9_]*)\\s*(?=:)\\s*:",
+      "captures": {
+        "1": { "name": "variable.parameter.kotlin" }
+      }
+    },
+    {
+      "name": "Operators",
       "match": "\\b(\\+|\\-|\\*|\\/|%|=|\\+=|\\-=|\\*=|\\/=|%=|==|!=|>|<|>=|<=|&&|\\|\\||!|\\?:|\\?\\.|\\?|\\.|\\.\\.|\\.\\.\\.|-\\>)\\b",
-      "name": "keyword.operator.kotlin"
+      "captures": {
+        "1": { "name": "keyword.operator.kotlin" }
+      }
+    },
+    {
+      "name": "Extension Properties and Functions",
+      "match": "\\b(fun|val|var)\\s+([A-Za-z][A-Za-z0-9_]*(?:\\.[A-Za-z][A-Za-z0-9_]*)*)\\.([A-Za-z][A-Za-z0-9_]*)\\b",
+      "captures": {
+        "1": { "name": "keyword.control.kotlin" },
+        "2": { "name": "entity.name.type.class.kotlin" },
+        "3": { "name": "entity.name.function.kotlin" }
+      }
+    },
+    {
+      "name": "Object Properties and Methods Access",
+      "match": "\\b([A-Za-z][A-Za-z0-9_]*)\\.((?:[A-Za-z][A-Za-z0-9_]*))\\b",
+      "captures": {
+        "1": { "name": "variable.other.kotlin" },
+        "2": { "name": "variable.other.property.kotlin" }
+      }
+    },
+    {
+      "name": "Method Calls",
+      "match": "\\.([A-Za-z][A-Za-z0-9_]*)\\s*\\(",
+      "captures": {
+        "1": { "name": "entity.name.function.kotlin" }
+      }
     }
   ]
 }
