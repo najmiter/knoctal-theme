@@ -2,7 +2,7 @@
   "name": "knoctal-theme",
   "displayName": "Knoctal Theme",
   "description": "Knoctal dark theme for VS Code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "najmiter",
   "engines": {
     "vscode": "^1.60.0"
@@ -35,6 +35,17 @@
           ".asm",
           ".s"
         ]
+      },
+      {
+        "id": "kotlin",
+        "aliases": [
+          "Kotlin",
+          "kotlin"
+        ],
+        "extensions": [
+          ".kt",
+          ".kts"
+        ]
       }
     ],
     "grammars": [
@@ -42,6 +53,11 @@
         "language": "assembly",
         "scopeName": "source.assembly",
         "path": "./syntaxes/assembly.tmLanguage.json"
+      },
+      {
+        "language": "kotlin",
+        "scopeName": "source.kotlin",
+        "path": "./syntaxes/kotlin.tmLanguage.json"
       }
     ]
   },
@@ -50,7 +66,8 @@
     "dark",
     "knoctal",
     "assembly theme",
-    "assembly syntax"
+    "assembly syntax",
+    "kotlin theme"
   ],
   "license": "CC BY-ND 4.0",
   "scripts": {

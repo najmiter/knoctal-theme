@@ -760,6 +760,66 @@
       "settings": {
         "foreground": "#ffb383"
       }
+    },
+
+    // Kotlin specific syntax highlighting
+    {
+      "name": "Kotlin Keywords",
+      "scope": ["keyword.control.kotlin", "storage.modifier.kotlin"],
+      "settings": {
+        "foreground": "#ec647d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Kotlin Classes and Types",
+      "scope": ["entity.name.type.class.kotlin", "support.class.kotlin"],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "Kotlin Functions",
+      "scope": ["entity.name.function.kotlin"],
+      "settings": {
+        "foreground": "#a494ea"
+      }
+    },
+    {
+      "name": "Kotlin Annotations",
+      "scope": ["storage.type.annotation.kotlin"],
+      "settings": {
+        "foreground": "#FFC000",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Kotlin Variables",
+      "scope": ["variable.other.kotlin"],
+      "settings": {
+        "foreground": "#ffb383"
+      }
+    },
+    {
+      "name": "Kotlin String Interpolation",
+      "scope": ["meta.template.expression.kotlin"],
+      "settings": {
+        "foreground": "#ffb383"
+      }
+    },
+    {
+      "name": "Kotlin Triple-quoted Strings",
+      "scope": ["string.quoted.triple.kotlin"],
+      "settings": {
+        "foreground": "#d78787"
+      }
+    },
+    {
+      "name": "Kotlin Constants",
+      "scope": ["constant.language.kotlin"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
     }
   ]
 }

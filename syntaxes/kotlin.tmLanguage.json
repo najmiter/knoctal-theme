@@ -1,0 +1,102 @@
+{
+  "scopeName": "source.kotlin",
+  "patterns": [
+    {
+      "match": "\\b(val|var|fun|class|interface|object|data|enum|sealed|companion|annotation|override|abstract|final|open|lateinit|by|is|as|in|out|where|get|set|constructor|init|import|package|throw|return|internal|private|protected|public|inline|noinline|crossinline|reified|suspend|tailrec|operator|infix|typealias|this|super|break|continue|when|if|else|while|for|do|try|catch|finally|typeof)\\b",
+      "name": "keyword.control.kotlin"
+    },
+    {
+      "match": "\\b(true|false|null)\\b",
+      "name": "constant.language.kotlin"
+    },
+    {
+      "match": "\\b(Int|Long|Short|Byte|Float|Double|Boolean|Char|String|Array|List|Map|Set|Unit|Any|Nothing)\\b",
+      "name": "support.class.kotlin"
+    },
+    {
+      "match": "@[A-Za-z][A-Za-z0-9_\\.]*",
+      "name": "storage.type.annotation.kotlin"
+    },
+    {
+      "begin": "//",
+      "end": "$",
+      "name": "comment.line.double-slash.kotlin"
+    },
+    {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.block.kotlin"
+    },
+    {
+      "begin": "\"\"\"",
+      "end": "\"\"\"",
+      "name": "string.quoted.triple.kotlin"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.kotlin",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.kotlin"
+        },
+        {
+          "begin": "\\$\\{",
+          "end": "\\}",
+          "name": "meta.template.expression.kotlin",
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
+        },
+        {
+          "match": "\\$[A-Za-z][A-Za-z0-9_]*",
+          "name": "meta.template.expression.kotlin"
+        }
+      ]
+    },
+    {
+      "begin": "'",
+      "end": "'",
+      "name": "string.quoted.single.kotlin",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.kotlin"
+        }
+      ]
+    },
+    {
+      "match": "\\b(0x[0-9A-Fa-f]+|[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?[fFL]?)\\b",
+      "name": "constant.numeric.kotlin"
+    },
+    {
+      "match": "\\b(fun)\\s+(<[^>]*>)?\\s*([A-Za-z][A-Za-z0-9_]*)\\s*\\(",
+      "captures": {
+        "1": {
+          "name": "keyword.control.kotlin"
+        },
+        "3": {
+          "name": "entity.name.function.kotlin"
+        }
+      }
+    },
+    {
+      "match": "\\b(class|interface|object|enum|data class)\\s+([A-Za-z][A-Za-z0-9_]*)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.control.kotlin"
+        },
+        "2": {
+          "name": "entity.name.type.class.kotlin"
+        }
+      }
+    },
+    {
+      "match": "\\b(\\+|\\-|\\*|\\/|%|=|\\+=|\\-=|\\*=|\\/=|%=|==|!=|>|<|>=|<=|&&|\\|\\||!|\\?:|\\?\\.|\\?|\\.|\\.\\.|\\.\\.\\.|-\\>)\\b",
+      "name": "keyword.operator.kotlin"
+    }
+  ]
+}
