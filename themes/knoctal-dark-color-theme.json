@@ -73,7 +73,6 @@
     "textLink.foreground": "#FFC000"
   },
   "tokenColors": [
-    // common
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -123,7 +122,12 @@
       "scope": [
         "entity.name.type",
         "entity.name.class",
-        "entity.name.namespace"
+        "entity.name.namespace",
+        "entity.other.inherited-class",
+        "support.class",
+        "entity.name.type.class.tsx",
+        "entity.name.type.module.ts",
+        "entity.name.type.module.tsx"
       ],
       "settings": {
         "foreground": "#b38cce"
@@ -131,7 +135,17 @@
     },
     {
       "name": "Type",
-      "scope": ["storage.type"],
+      "scope": [
+        "storage.type",
+        "storage.type.interface.ts",
+        "storage.type.interface.tsx",
+        "storage.type.enum.ts",
+        "storage.type.enum.tsx",
+        "storage.type.type.ts",
+        "storage.type.type.tsx",
+        "keyword.operator.type.annotation.ts",
+        "keyword.operator.type.annotation.tsx"
+      ],
       "settings": {
         "foreground": "#83b5ff",
         "fontStyle": "italic"
@@ -208,7 +222,7 @@
         "foreground": "#c5cfe6"
       }
     },
-    // css
+
     {
       "name": "CSS Property",
       "scope": ["support.type.property-name.css"],
@@ -231,7 +245,7 @@
         "fontStyle": "italic"
       }
     },
-    // cpp
+
     {
       "name": "C++ Type Names in Declarations",
       "scope": [
@@ -246,7 +260,7 @@
         "fontStyle": "bold"
       }
     },
-    // typescript
+
     {
       "name": "Primitive Type",
       "scope": [
@@ -261,7 +275,10 @@
         "support.type.builtin.ts",
         "support.type.builtin.tsx",
         "keyword.operator.expression.typeof.ts",
-        "keyword.operator.expression.typeof.tsx"
+        "keyword.operator.expression.typeof.tsx",
+
+        "support.type.primitive.ts",
+        "support.type.primitive.tsx"
       ],
       "settings": {
         "foreground": "#83b5ff",
@@ -270,13 +287,99 @@
     },
     {
       "name": "TypeScript Modifier",
-      "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
+      "scope": [
+        "storage.modifier.ts",
+        "storage.modifier.tsx",
+        "storage.modifier.async.ts",
+        "storage.modifier.async.tsx"
+      ],
       "settings": {
         "foreground": "#FFC000",
         "fontStyle": "italic"
       }
     },
-    // json
+    {
+      "name": "TypeScript Decorator",
+      "scope": [
+        "meta.decorator.ts",
+        "meta.decorator.tsx",
+        "entity.name.function.decorator.ts",
+        "entity.name.function.decorator.tsx"
+      ],
+      "settings": {
+        "foreground": "#FFC000",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "TypeScript Type Parameter",
+      "scope": [
+        "entity.name.type.parameter.ts",
+        "entity.name.type.parameter.tsx"
+      ],
+      "settings": {
+        "foreground": "#83b5ff"
+      }
+    },
+    {
+      "name": "TypeScript Enum Member",
+      "scope": [
+        "variable.other.enummember.ts",
+        "variable.other.enummember.tsx"
+      ],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "TypeScript Interface Name",
+      "scope": [
+        "entity.name.type.interface.ts",
+        "entity.name.type.interface.tsx"
+      ],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "TypeScript Type Alias Name",
+      "scope": ["entity.name.type.alias.ts", "entity.name.type.alias.tsx"],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+    {
+      "name": "TSX Tag",
+      "scope": ["entity.name.tag.tsx"],
+      "settings": {
+        "foreground": "#FFC000"
+      }
+    },
+    {
+      "name": "TSX Attribute",
+      "scope": ["entity.other.attribute-name.tsx"],
+      "settings": {
+        "foreground": "#a4c1ff"
+      }
+    },
+    {
+      "name": "TSX Punctuation Tag",
+      "scope": [
+        "punctuation.definition.tag.begin.tsx",
+        "punctuation.definition.tag.end.tsx"
+      ],
+      "settings": {
+        "foreground": "#c2c2c2"
+      }
+    },
+    {
+      "name": "TSX Component Tag",
+      "scope": ["support.class.component.tsx"],
+      "settings": {
+        "foreground": "#b38cce"
+      }
+    },
+
     {
       "name": "JSON Key",
       "scope": ["support.type.property-name.json"],
@@ -331,7 +434,7 @@
         "fontStyle": "bold"
       }
     },
-    // assembly
+
     {
       "scope": "keyword.instruction.assembly",
       "settings": { "foreground": "#ffcc00" }
@@ -360,7 +463,7 @@
       "scope": "entity.name.function.label.assembly",
       "settings": { "foreground": "#a494ea" }
     },
-    // Java-specific syntax highlighting
+
     {
       "name": "Java Keywords",
       "scope": [
@@ -426,7 +529,7 @@
         "fontStyle": "italic"
       }
     },
-    // C# specific syntax highlighting
+
     {
       "name": "C# Keywords and Modifiers",
       "scope": [
@@ -489,7 +592,7 @@
         "fontStyle": "italic"
       }
     },
-    // Rust specific syntax highlighting
+
     {
       "name": "Rust Keywords",
       "scope": [
@@ -552,7 +655,6 @@
       }
     },
 
-    // Zig specific syntax highlighting
     {
       "name": "Zig Keywords",
       "scope": [
@@ -602,7 +704,6 @@
       }
     },
 
-    // PHP specific syntax highlighting
     {
       "name": "PHP Tags",
       "scope": [
@@ -696,7 +797,6 @@
       }
     },
 
-    // HTML in PHP
     {
       "name": "HTML Tags in PHP",
       "scope": [
@@ -762,7 +862,6 @@
       }
     },
 
-    // Kotlin specific syntax highlighting
     {
       "name": "Kotlin Keywords",
       "scope": ["keyword.control.kotlin", "storage.modifier.kotlin"],
