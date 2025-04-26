@@ -89,7 +89,11 @@
     },
     {
       "name": "Function",
-      "scope": ["entity.name.function"],
+      "scope": [
+        "entity.name.function",
+        "variable.other.constant.ts",
+        "variable.other.constant.tsx"
+      ],
       "settings": {
         "foreground": "#a494ea"
       }
