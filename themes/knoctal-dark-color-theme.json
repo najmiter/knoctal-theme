@@ -91,8 +91,10 @@
       "name": "Function",
       "scope": [
         "entity.name.function",
-        "variable.other.constant.ts",
-        "variable.other.constant.tsx"
+        "storage.type.function.arrow",
+        "keyword.control.flow.return",
+        "meta.function.anonymous",
+        "variable.function"
       ],
       "settings": {
         "foreground": "#a494ea"
@@ -108,7 +110,11 @@
     },
     {
       "name": "Async Keyword",
-      "scope": ["storage.modifier.async"],
+      "scope": [
+        "storage.modifier.async",
+        "storage.modifier.async.ts",
+        "storage.modifier.async.tsx"
+      ],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -172,6 +178,18 @@
     {
       "name": "Tag",
       "scope": ["entity.name.tag"],
+      "settings": {
+        "foreground": "#FFC000"
+      }
+    },
+    {
+      "name": "JSX/TSX Components",
+      "scope": [
+        "support.class.component.jsx",
+        "support.class.component.tsx",
+        "entity.name.tag.js.jsx",
+        "entity.name.tag.tsx"
+      ],
       "settings": {
         "foreground": "#FFC000"
       }
@@ -291,12 +309,7 @@
     },
     {
       "name": "TypeScript Modifier",
-      "scope": [
-        "storage.modifier.ts",
-        "storage.modifier.tsx",
-        "storage.modifier.async.ts",
-        "storage.modifier.async.tsx"
-      ],
+      "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
       "settings": {
         "foreground": "#FFC000",
         "fontStyle": "italic"
@@ -374,13 +387,6 @@
       ],
       "settings": {
         "foreground": "#c2c2c2"
-      }
-    },
-    {
-      "name": "TSX Component Tag",
-      "scope": ["support.class.component.tsx"],
-      "settings": {
-        "foreground": "#b38cce"
       }
     },
 
