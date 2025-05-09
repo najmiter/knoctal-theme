@@ -14,7 +14,6 @@ A dark theme for Visual Studio Code that's easy on the eyes.
 - Java
 - Python
 - Rust
-- Zig
 - PHP
 - Markdown
 - Kotlin
