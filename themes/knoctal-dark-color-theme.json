@@ -110,11 +110,7 @@
     },
     {
       "name": "Async Keyword",
-      "scope": [
-        "storage.modifier.async",
-        "storage.modifier.async.ts",
-        "storage.modifier.async.tsx"
-      ],
+      "scope": ["storage.modifier.async", "storage.modifier.async.ts", "storage.modifier.async.tsx"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -311,8 +307,8 @@
       "name": "TypeScript Modifier",
       "scope": ["storage.modifier.ts", "storage.modifier.tsx"],
       "settings": {
-        "foreground": "#FFC000",
-        "fontStyle": "italic"
+        "foreground": "#ec647d",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -330,30 +326,21 @@
     },
     {
       "name": "TypeScript Type Parameter",
-      "scope": [
-        "entity.name.type.parameter.ts",
-        "entity.name.type.parameter.tsx"
-      ],
+      "scope": ["entity.name.type.parameter.ts", "entity.name.type.parameter.tsx"],
       "settings": {
         "foreground": "#83b5ff"
       }
     },
     {
       "name": "TypeScript Enum Member",
-      "scope": [
-        "variable.other.enummember.ts",
-        "variable.other.enummember.tsx"
-      ],
+      "scope": ["variable.other.enummember.ts", "variable.other.enummember.tsx"],
       "settings": {
         "foreground": "#a4c1ff"
       }
     },
     {
       "name": "TypeScript Interface Name",
-      "scope": [
-        "entity.name.type.interface.ts",
-        "entity.name.type.interface.tsx"
-      ],
+      "scope": ["entity.name.type.interface.ts", "entity.name.type.interface.tsx"],
       "settings": {
         "foreground": "#b38cce"
       }
@@ -381,10 +368,7 @@
     },
     {
       "name": "TSX Punctuation Tag",
-      "scope": [
-        "punctuation.definition.tag.begin.tsx",
-        "punctuation.definition.tag.end.tsx"
-      ],
+      "scope": ["punctuation.definition.tag.begin.tsx", "punctuation.definition.tag.end.tsx"],
       "settings": {
         "foreground": "#c2c2c2"
       }
@@ -476,11 +460,7 @@
 
     {
       "name": "Java Keywords",
-      "scope": [
-        "keyword.control.java",
-        "storage.modifier.java",
-        "storage.type.java"
-      ],
+      "scope": ["keyword.control.java", "storage.modifier.java", "storage.type.java"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -488,20 +468,14 @@
     },
     {
       "name": "Java Classes",
-      "scope": [
-        "entity.name.type.class.java",
-        "entity.other.inherited-class.java"
-      ],
+      "scope": ["entity.name.type.class.java", "entity.other.inherited-class.java"],
       "settings": {
         "foreground": "#b38cce"
       }
     },
     {
       "name": "Java Methods",
-      "scope": [
-        "entity.name.function.java",
-        "entity.name.function.method.java"
-      ],
+      "scope": ["entity.name.function.java", "entity.name.function.method.java"],
       "settings": {
         "foreground": "#a494ea"
       }
@@ -530,10 +504,7 @@
     },
     {
       "name": "Java Imports",
-      "scope": [
-        "storage.modifier.import.java",
-        "storage.modifier.package.java"
-      ],
+      "scope": ["storage.modifier.import.java", "storage.modifier.package.java"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -542,12 +513,7 @@
 
     {
       "name": "C# Keywords and Modifiers",
-      "scope": [
-        "keyword.control.cs",
-        "storage.modifier.cs",
-        "keyword.other.namespace.cs",
-        "storage.type.cs"
-      ],
+      "scope": ["keyword.control.cs", "storage.modifier.cs", "keyword.other.namespace.cs", "storage.type.cs"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -605,12 +571,7 @@
 
     {
       "name": "Rust Keywords",
-      "scope": [
-        "keyword.control.rust",
-        "keyword.operator.rust",
-        "storage.type.rust",
-        "storage.modifier.rust"
-      ],
+      "scope": ["keyword.control.rust", "keyword.operator.rust", "storage.type.rust", "storage.modifier.rust"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -618,11 +579,7 @@
     },
     {
       "name": "Rust Types",
-      "scope": [
-        "entity.name.type.rust",
-        "storage.type.core.rust",
-        "storage.class.std.rust"
-      ],
+      "scope": ["entity.name.type.rust", "storage.type.core.rust", "storage.class.std.rust"],
       "settings": {
         "foreground": "#b38cce"
       }
@@ -667,12 +624,7 @@
 
     {
       "name": "Zig Keywords",
-      "scope": [
-        "keyword.control.zig",
-        "keyword.operator.zig",
-        "storage.type.zig",
-        "storage.modifier.zig"
-      ],
+      "scope": ["keyword.control.zig", "keyword.operator.zig", "storage.type.zig", "storage.modifier.zig"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
@@ -716,10 +668,7 @@
 
     {
       "name": "PHP Tags",
-      "scope": [
-        "punctuation.section.embedded.begin.php",
-        "punctuation.section.embedded.end.php"
-      ],
+      "scope": ["punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"],
       "settings": {
         "foreground": "#ef5f72"
       }
@@ -767,10 +716,7 @@
     },
     {
       "name": "PHP Namespaces",
-      "scope": [
-        "support.other.namespace.php",
-        "entity.name.type.namespace.php"
-      ],
+      "scope": ["support.other.namespace.php", "entity.name.type.namespace.php"],
       "settings": {
         "foreground": "#b38cce"
       }
@@ -841,20 +787,14 @@
     },
     {
       "name": "HTML String in PHP",
-      "scope": [
-        "string.quoted.double.html.php",
-        "string.quoted.single.html.php"
-      ],
+      "scope": ["string.quoted.double.html.php", "string.quoted.single.html.php"],
       "settings": {
         "foreground": "#d78787"
       }
     },
     {
       "name": "Doctype in PHP",
-      "scope": [
-        "meta.tag.metadata.doctype.html.php",
-        "entity.name.tag.doctype.html.php"
-      ],
+      "scope": ["meta.tag.metadata.doctype.html.php", "entity.name.tag.doctype.html.php"],
       "settings": {
         "foreground": "#ec647d",
         "fontStyle": "italic"
