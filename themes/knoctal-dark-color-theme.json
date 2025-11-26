@@ -67,13 +67,15 @@
     "terminal.ansiBrightYellow": "#e5c07b",
     "terminal.selectionBackground": "#3e4451",
     "list.activeSelectionBackground": "#3e4451",
+    "list.focusOutline": "#615FFF",
     "editorLineNumber.activeForeground": "#a2abbc",
     "editorLineNumber.foreground": "#4e525c",
     "welcomePage.background": "#20242c",
     "welcomePage.progress.background": "#615FFF",
     "welcomePage.progress.foreground": "#1f2024",
     "textLink.foreground": "#615FFF",
-    "textLink.activeForeground": "#7c86ff"
+    "textLink.activeForeground": "#7c86ff",
+    "focusBorder": "#615FFF"
   },
   "tokenColors": [
     {
