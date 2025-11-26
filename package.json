@@ -29,6 +29,11 @@
         "label": "Knoctal Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/knoctal-dark-color-theme.json"
+      },
+      {
+        "label": "Knoctal Darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/knoctal-darker-color-theme.json"
       }
     ],
     "languages": [
@@ -40,6 +45,7 @@
         ],
         "extensions": [
           ".asm",
+          ".nasm",
           ".s"
         ]
       },
