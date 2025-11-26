@@ -46,7 +46,7 @@
     "extensionButton.prominentHoverBackground": "#615FFF",
     "quickInput.background": "#1c1d22",
     "quickInput.foreground": "#E0E0E0",
-    "editorSuggestWidget.background": "#27292d",
+    "editorSuggestWidget.background": "#161619",
     "editorSuggestWidget.border": "#4e525c",
     "editorSuggestWidget.foreground": "#E0E0E0",
     "terminal.background": "#1c1c20",
