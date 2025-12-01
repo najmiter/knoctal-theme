@@ -436,25 +436,26 @@
       }
     },
 
+    // assembly
     {
       "scope": "keyword.instruction.assembly",
       "settings": { "foreground": "#ffcc00" }
     },
     {
       "scope": "comment.line.assembly",
-      "settings": { "foreground": "#6A9955" }
+      "settings": { "foreground": "#898989" }
     },
     {
       "scope": "string.assembly",
-      "settings": { "foreground": "#ce9178" }
+      "settings": { "foreground": "#d78787" }
     },
     {
       "scope": "constant.numeric.assembly",
-      "settings": { "foreground": "#b5cea8" }
+      "settings": { "foreground": "#a4c1ff" }
     },
     {
       "scope": "variable.register.assembly",
-      "settings": { "foreground": "#9cdcfe" }
+      "settings": { "foreground": "#ec647d" }
     },
     {
       "scope": "storage.type.directive.assembly",
