@@ -144,8 +144,11 @@
         "entity.other.inherited-class",
         "support.class",
         "entity.name.type.class.tsx",
+        "entity.name.type.class.jsx",
         "entity.name.type.module.ts",
-        "entity.name.type.module.tsx"
+        "entity.name.type.module.js",
+        "entity.name.type.module.tsx",
+        "entity.name.type.module.jsx"
       ],
       "settings": {
         "foreground": "#b38cce"
@@ -194,8 +197,10 @@
       "name": "JSX/TSX Components",
       "scope": [
         "support.class.component.jsx",
+        "support.class.component.js",
         "support.class.component.tsx",
         "entity.name.tag.js.jsx",
+        "entity.name.tag.js.js",
         "entity.name.tag.tsx"
       ],
       "settings": {
@@ -306,7 +311,6 @@
         "support.type.builtin.tsx",
         "keyword.operator.expression.typeof.ts",
         "keyword.operator.expression.typeof.tsx",
-
         "support.type.primitive.ts",
         "support.type.primitive.tsx"
       ],
@@ -362,13 +366,6 @@
       "scope": ["entity.name.type.alias.ts", "entity.name.type.alias.tsx"],
       "settings": {
         "foreground": "#b38cce"
-      }
-    },
-    {
-      "name": "TSX Tag",
-      "scope": ["entity.name.tag.tsx"],
-      "settings": {
-        "foreground": "#FFC000"
       }
     },
     {
