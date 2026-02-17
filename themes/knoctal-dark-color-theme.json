@@ -189,8 +189,10 @@
       "name": "JSX/TSX Components",
       "scope": [
         "support.class.component.jsx",
+        "support.class.component.js",
         "support.class.component.tsx",
         "entity.name.tag.js.jsx",
+        "entity.name.tag.js.js",
         "entity.name.tag.tsx"
       ],
       "settings": {
@@ -301,7 +303,6 @@
         "support.type.builtin.tsx",
         "keyword.operator.expression.typeof.ts",
         "keyword.operator.expression.typeof.tsx",
-
         "support.type.primitive.ts",
         "support.type.primitive.tsx"
       ],
