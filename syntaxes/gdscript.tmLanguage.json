@@ -1,0 +1,154 @@
+{
+  "scopeName": "source.gdscript",
+  "patterns": [
+    {
+      "match": "#[^\\n]*$",
+      "name": "comment.line.number-sign.gdscript"
+    },
+    {
+      "begin": "\"\"\"",
+      "end": "\"\"\"",
+      "name": "string.quoted.triple.gdscript"
+    },
+    {
+      "begin": "'''",
+      "end": "'''",
+      "name": "string.quoted.triple.gdscript"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.gdscript",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.gdscript"
+        }
+      ]
+    },
+    {
+      "begin": "'",
+      "end": "'",
+      "name": "string.quoted.single.gdscript",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.gdscript"
+        }
+      ]
+    },
+    {
+      "match": "\\$\"(?:\\\\.|[^\"\\\\])*\"",
+      "name": "support.function.nodepath.gdscript"
+    },
+    {
+      "match": "\\$'(?:\\\\.|[^'\\\\])*'",
+      "name": "support.function.nodepath.gdscript"
+    },
+    {
+      "match": "\\$(?:\\.|\\/)?[A-Za-z_][A-Za-z0-9_\\/]*",
+      "name": "support.function.nodepath.gdscript"
+    },
+    {
+      "match": "@[A-Za-z_][A-Za-z0-9_]*",
+      "name": "storage.type.annotation.gdscript"
+    },
+    {
+      "match": "\\b(class_name)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.gdscript"
+        },
+        "2": {
+          "name": "entity.name.type.class.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b(func)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "keyword.control.gdscript"
+        },
+        "2": {
+          "name": "entity.name.function.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\.\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b(?!if\\b|elif\\b|else\\b|for\\b|while\\b|match\\b|return\\b|await\\b|yield\\b|class_name\\b|extends\\b|class\\b|func\\b|var\\b|const\\b|static\\b|enum\\b|signal\\b|break\\b|continue\\b|pass\\b|and\\b|or\\b|not\\b|is\\b|as\\b|in\\b|when\\b|self\\b|super\\b)([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b(var|const|signal|enum)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.gdscript"
+        },
+        "2": {
+          "name": "variable.other.definition.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(?=:=|=|\\+=|\\-=|\\*=|\\/=|%=)",
+      "captures": {
+        "1": {
+          "name": "variable.other.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\.\\s*([A-Za-z_][A-Za-z0-9_]*)\\b",
+      "captures": {
+        "1": {
+          "name": "variable.other.property.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b(?!class_name\\b|extends\\b|class\\b|func\\b|var\\b|const\\b|static\\b|enum\\b|signal\\b|if\\b|elif\\b|else\\b|for\\b|while\\b|match\\b|break\\b|continue\\b|pass\\b|return\\b|await\\b|yield\\b|in\\b|and\\b|or\\b|not\\b|is\\b|as\\b|when\\b|self\\b|super\\b|true\\b|false\\b|null\\b|PI\\b|TAU\\b|INF\\b|NAN\\b|void\\b|bool\\b|int\\b|float\\b|String\\b|StringName\\b|Node\\b|NodePath\\b|Array\\b|Dictionary\\b|Callable\\b|RID\\b|Variant\\b|Vector2\\b|Vector2i\\b|Vector3\\b|Vector3i\\b|Vector4\\b|Vector4i\\b|Color\\b|Rect2\\b|Rect2i\\b|Transform2D\\b|Transform3D\\b|Basis\\b|Quaternion\\b|Plane\\b|AABB\\b|PackedByteArray\\b|PackedInt32Array\\b|PackedInt64Array\\b|PackedFloat32Array\\b|PackedFloat64Array\\b|PackedStringArray\\b|PackedVector2Array\\b|PackedVector3Array\\b|PackedColorArray\\b|Signal\\b)([a-z_][A-Za-z0-9_]*)\\b",
+      "captures": {
+        "1": {
+          "name": "variable.other.gdscript"
+        }
+      }
+    },
+    {
+      "match": "\\b(class_name|extends|class|func|var|const|static|enum|signal|if|elif|else|for|while|match|break|continue|pass|return|await|yield|in|and|or|not|is|as|when|self|super)\\b",
+      "name": "keyword.control.gdscript"
+    },
+    {
+      "match": "\\b(true|false|null|PI|TAU|INF|NAN)\\b",
+      "name": "constant.language.gdscript"
+    },
+    {
+      "match": "\\b(void|bool|int|float|String|StringName|Node|NodePath|Array|Dictionary|Callable|RID|Variant|Vector2|Vector2i|Vector3|Vector3i|Vector4|Vector4i|Color|Rect2|Rect2i|Transform2D|Transform3D|Basis|Quaternion|Plane|AABB|PackedByteArray|PackedInt32Array|PackedInt64Array|PackedFloat32Array|PackedFloat64Array|PackedStringArray|PackedVector2Array|PackedVector3Array|PackedColorArray|Signal)\\b",
+      "name": "support.class.gdscript"
+    },
+    {
+      "match": "\\b(0x[0-9A-Fa-f]+|0b[01]+|[0-9]+(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?)\\b",
+      "name": "constant.numeric.gdscript"
+    },
+    {
+      "match": "\\b[A-Z][A-Z0-9_]*\\b",
+      "name": "constant.other.gdscript"
+    },
+    {
+      "match": "\\*\\*|:=|\\+=|\\-=|\\*=|\\/=|%=|==|!=|>=|<=|>|<|=|\\+|\\-|\\*|\\/|%|\\b(?:and|or|not|is|as|in)\\b",
+      "name": "keyword.operator.gdscript"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "knoctal-theme",
   "displayName": "Knoctal Theme",
   "description": "Knoctal dark theme for VS Code",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "publisher": "najmiter",
   "engines": {
     "vscode": "^1.60.0"
@@ -59,6 +59,17 @@
           ".kt",
           ".kts"
         ]
+      },
+      {
+        "id": "gdscript",
+        "aliases": [
+          "GDScript",
+          "gdscript",
+          "Godot Script"
+        ],
+        "extensions": [
+          ".gd"
+        ]
       }
     ],
     "grammars": [
@@ -71,6 +82,11 @@
         "language": "kotlin",
         "scopeName": "source.kotlin",
         "path": "./syntaxes/kotlin.tmLanguage.json"
+      },
+      {
+        "language": "gdscript",
+        "scopeName": "source.gdscript",
+        "path": "./syntaxes/gdscript.tmLanguage.json"
       }
     ]
   },
@@ -80,7 +96,10 @@
     "knoctal",
     "assembly theme",
     "assembly syntax",
-    "kotlin theme"
+    "kotlin theme",
+    "gdscript theme",
+    "godot",
+    "godot script"
   ],
   "license": "CC BY-ND 4.0",
   "devDependencies": {
